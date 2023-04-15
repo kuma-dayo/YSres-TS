@@ -1,0 +1,44 @@
+{
+  "name": "ysres-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "lint": "eslint --fix \"./src/**/*.ts\"",
+    "format": "prettier -w \"./src/**/*.ts\"",
+    "start": "node build.js && node ./build/index"
+  },
+  "keywords": [],
+  "author": "kumadayo",
+  "license": "AGPL-3.0",
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@types/node": "^18.15.10",
+    "husky": "^8.0.3",
+    "kaitai-struct": "next",
+    "kaitai-struct-compiler": "next",
+    "lint-staged": "^13.2.0",
+    "source-map-support": "^0.5.21",
+    "typescript": "^5.0.2",
+    "typescript-logging": "^2.1.0",
+    "typescript-logging-log4ts-style": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/source-map-support": "^0.5.6",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.8.7"
+  }
+}

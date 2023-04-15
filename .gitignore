@@ -1,0 +1,9 @@
+**.code-workspace
+.vscode/settings.json
+.DS_Store
+node_modules
+compile
+bin
+build
+Json
+package-lock.json
